@@ -1,4 +1,5 @@
 import React, { ReactNode, useEffect, useState } from "react";
+import { parseHost } from "../pages/api/utils/parseHost";
 
 type ProtectedProps = {
   children: ReactNode;
@@ -17,9 +18,15 @@ export const Protected = ({ children, profile }: ProtectedProps) => {
   if (profile) return <>{children}</>;
 
   if (isBrowser) {
+    const { domain, port } = parseHost(location.host);
+
+    const href = `//${domain}${
+      port ? `:${port}` : ""
+    }/connect/google?redirect=${location}`;
+
     return (
       <div>
-        <a href={`/connect/google?redirect=${location}`}>
+        <a href={href} target="_self">
           Continue with Google
         </a>
       </div>
