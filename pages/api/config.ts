@@ -2,6 +2,7 @@ export const cookieSession = {
   maxAge: 2 * 60e3,
   name: "session",
   secret: process.env.COOKIE_SESSION_SECRET,
+  sameSite: "lax",
 };
 
 export const grant = {
