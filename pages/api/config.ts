@@ -15,6 +15,6 @@ export const grant = {
     secret: process.env.OAUTH_GOOGLE_SECRET,
     scope: ["openid", "email", "profile"],
     response: ["tokens", "profile"],
-    callback: "/api/redirect",
+    callback: "/api/oauth/callback",
   },
 };

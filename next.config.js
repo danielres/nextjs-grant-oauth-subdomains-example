@@ -3,7 +3,7 @@ module.exports = {
     return [
       {
         source: "/connect/(.*)",
-        destination: "/api/grant",
+        destination: "/api/oauth",
       },
     ];
   },

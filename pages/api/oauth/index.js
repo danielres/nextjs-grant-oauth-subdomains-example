@@ -1,5 +1,5 @@
 import Grant from "grant";
-import * as config from "./config";
+import * as config from "../config";
 
 module.exports = async (req, res) => {
   const secret = config.cookieSession.secret;
