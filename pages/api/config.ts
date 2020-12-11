@@ -1,5 +1,5 @@
 export const cookieSession = {
-  maxAge: 2 * 60e3,
+  maxAge: 15 * 60e3, // 15 minutes (sliding)
   name: "session",
   secret: process.env.COOKIE_SESSION_SECRET,
   sameSite: "lax",
