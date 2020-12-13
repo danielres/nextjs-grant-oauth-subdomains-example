@@ -24,7 +24,7 @@ Feedback, suggestions and contributions are most welcome!
 - if the user triggers authentication from any page under any domain/subdomain/path, the user is sent back to the same exact page after the authentication
 - **stateless** session (does not require a db), stores the session in a secure, encrypted cookie
 - uses a short cookie/session maxAge of 15 minutes, but sliding: session life is auto-extended as long as the user remains active
-- to minimize request, the session auto-extention mechanism happens max. once per minute
+- to minimize cookie rewrites, the session auto-extention mechanism happens max. once per minute
 
 ## Gotchas
 
