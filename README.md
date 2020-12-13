@@ -4,7 +4,7 @@
 
 ## Disclaimer
 
-This is a proof of concept, you can consider it as **alpha version**.\
+This is a proof of concept, please consider it as **alpha version**.\
 **Use at your own risk!**
 
 Feedback, suggestions and contributions are most welcome!
