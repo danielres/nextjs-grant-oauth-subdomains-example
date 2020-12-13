@@ -15,7 +15,8 @@ Feedback, suggestions and contributions are most welcome!
 
 ## Characteristics of this implementation
 
-- **serverless**: uses only (vercel) functions
+- **No reliance on external oauth services** like Auth0, Firebase Auth, Okta,... Note that this might be an advantage or a disadvantage depending on your requirements. Such services typically come with some extras like analytics, user management or anomaly detection, it's a question of tradeoffs.
+- **serverless**: the backend-side relies only on (vercel) functions
 - uses [**grant.js**](https://github.com/simov/grant) under the hood, which is customizable to the extreme, and supports a [very large number of OAuth providers](https://github.com/simov/grant#200-supported-providers--oauth-playground) out of the box
 - supports **workspaces** (subdomains)
 - shares the user's authentication across the top domain and all subdomains
@@ -75,6 +76,8 @@ Then:
 ## Integrating to your code
 
 This demo/proof of concept is intentionally kept extremely bare-bones and minimal so it remains easy to read, understand and reproduce.
+
+The first thing you might want to do is to persist your authenticated users in a database. The place to do so would be in the `pages/api/oauth/callback.js`, where you can process the OAuth response as you wish.
 
 ## Building and deploying
 
