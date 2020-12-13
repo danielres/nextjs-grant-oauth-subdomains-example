@@ -4,8 +4,8 @@
 
 ## Disclaimer
 
-This is a proof of concept, you can consider it as alpha version.\
-Use at your own risk!
+This is a proof of concept, you can consider it as **alpha version**.\
+**Use at your own risk!**
 
 Feedback, suggestions and contributions are most welcome!
 
