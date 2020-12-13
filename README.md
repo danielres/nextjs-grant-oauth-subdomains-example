@@ -16,6 +16,7 @@ Feedback, suggestions and contributions are most welcome!
 ## Characteristics of this implementation
 
 - **No reliance on external oauth services** like Auth0, Firebase Auth, Okta,... Note that this might be an advantage or a disadvantage depending on your requirements. Such services typically come with some extras like analytics, user management or anomaly detection, it's a question of tradeoffs.
+- **Minimal boilerplate** by leveraging high-quality libraries like grant.js, Nextjs and cookie-session.
 - **serverless**: the backend-side relies only on (vercel) functions
 - uses [**grant.js**](https://github.com/simov/grant) under the hood, which is customizable to the extreme, and supports a [very large number of OAuth providers](https://github.com/simov/grant#200-supported-providers--oauth-playground) out of the box
 - supports **workspaces** (subdomains)
